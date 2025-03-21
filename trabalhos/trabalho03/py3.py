@@ -17,7 +17,7 @@ for i in range(m):
 
 
 
-cdf = np.zeros(256, dtype=int)
+cdf = np.zeros(256, dtype=float)  # Use float for proper division
 
 cdf[0] = histograma[0]
 
@@ -28,21 +28,28 @@ for i in range(1, 256):
 
 cdf_min=1
 # menor valor diferente de zero
-for i in range(len(cdf)):
-    if(cdf[i] < cdf_min and cdf[i]!=0):
-        cdf_min = cdf[i]
+cdf_min = np.min(cdf[cdf > 0])
 
 total_pixels = m * n
 
 # Normalizando a CDF
 for i in range(256):
         cdf[i] = ((cdf[i] - cdf_min) / (total_pixels - cdf_min) * 255)
+#cdf = (cdf - cdf_min) / (total_pixels - cdf_min) * 255
+cdf_normalizado = np.round(cdf).astype(np.uint8)
 
+# Aplicar a equalização na imagem
+img_new = cdf_normalizado[img]
 
+print(img_new)
+cv2.imwrite('equalizado.tif', img_new)
+
+"""
 for i in range(m):
     for j in range(n):
         #print(f"{i},{j}={str(cdf[img[i, j]])}")
         img_new[i, j] = cdf[img[i, j]]
+"""
 
-print(img_new)
-cv2.imwrite('equalizado.tif', img_new)
+
+
