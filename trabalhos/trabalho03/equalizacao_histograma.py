@@ -24,9 +24,14 @@ cdf_min = cdf[cdf > 0].min()
 # Normalizar a CDF para o intervalo [0, 255]
 cdf_normalizado = ((cdf - cdf_min) / (m * n - cdf_min)) * 255
 
+
+
+
 # Converter para uint8
 cdf_normalizado = np.round(cdf_normalizado).astype(np.uint8)
+print(cdf_normalizado)
 
+exit()
 # Aplicar a equalização na imagem
 img_new = cdf_normalizado[img]
 
