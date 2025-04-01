@@ -1,0 +1,12 @@
+
+1)
+
+b) Baixe as duas imagens HDR hw1_memorial.hdr e hw1_atrium.hdr da página do curso. Leia as imagens utilizando a função do MatLab hdrread. Converta a imagem para tons de cinza utilizando a função rgb2gray. Utilizando imshow, visualize a imagem. É possível ver os detalhes da imagem com nitidez?
+
+Resposta: É mais difícil ver os detalhes na imagem em escala de cinza, especialmente tetalhes em áreas com pouca iluminação na imagem.
+
+
+
+Aplique uma transformação 𝛾 às imagens em tons de cinza obtidas em (b).
+Visualize as imagens utilizando imshow. Para cada imagem, qual a melhoria
+introduzida pela transformação?
