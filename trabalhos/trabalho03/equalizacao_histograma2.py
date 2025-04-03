@@ -2,8 +2,9 @@ import cv2
 import numpy as np
 import matplotlib.pyplot as plt
 
-# Carregar a imagem em escala de cinza
-img = cv2.imread('einstein.tif', cv2.IMREAD_GRAYSCALE)
+# Leitura das imagens em escala de cinza
+img = cv2.imread('Fig0222(b)(cameraman).tif', cv2.IMREAD_GRAYSCALE)
+img2 = cv2.imread('pratica_2_1_2.png', cv2.IMREAD_GRAYSCALE)
 
 # Dimensões da imagem
 m, n = img.shape

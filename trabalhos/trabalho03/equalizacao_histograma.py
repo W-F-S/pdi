@@ -17,7 +17,7 @@ for i in range(m):
 
 
 
-cdf = np.zeros(256, dtype=float)  # Use float for proper division
+cdf = np.zeros(256, dtype=float)
 
 cdf[0] = histograma[0]
 
