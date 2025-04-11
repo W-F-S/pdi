@@ -1,0 +1,20 @@
+
+1)
+
+
+a) Imagens HDR (Alta Faixa Dinâmica) são feitas a partir da combinação de várias fotos da mesma cena com diferentes níveis de exposição. Isso permite mostrar mais detalhes nas partes claras e escuras ao mesmo tempo. O resultado são imagens com cores mais vivas, maior equilíbrio de luz e mais próximas do que os olhos humanos realmente veem, especialmente em cenas com muito contraste.
+
+b) Baixe as duas imagens HDR hw1_memorial.hdr e hw1_atrium.hdr da página do curso. Leia as imagens utilizando a função do MatLab hdrread. Converta a imagem para tons de cinza utilizando a função rgb2gray. Utilizando imshow, visualize a imagem. É possível ver os detalhes da imagem com nitidez?
+
+Resposta: É mais difícil ver os detalhes na imagem em escala de cinza, especialmente tetalhes em áreas com pouca iluminação na imagem.
+
+
+
+c) Aplique uma transformação 𝛾 às imagens em tons de cinza obtidas em (b).
+Visualize as imagens utilizando imshow. Para cada imagem, qual a melhoria
+introduzida pela transformação?
+
+Resposta: Brilho foi amplificado
+
+
+d)

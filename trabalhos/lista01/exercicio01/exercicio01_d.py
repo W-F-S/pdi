@@ -35,10 +35,10 @@ if __name__ == '__main__':
 
 
 
-    cv2.imwrite('../ImagensHDR/hw1_atrium_grayscale_log_transf_b1.hdr', log_img_b1)
-    cv2.imwrite('../ImagensHDR/hw1_atrium_grayscale_log_transf_g1.hdr', log_img_g1)
-    cv2.imwrite('../ImagensHDR/hw1_atrium_grayscale_log_transf_r1.hdr', log_img_r1)
+    cv2.imwrite('./exercicio_d/hw1_atrium_grayscale_log_transf_b1.hdr', log_img_b1)
+    cv2.imwrite('./exercicio_d/hw1_atrium_grayscale_log_transf_g1.hdr', log_img_g1)
+    cv2.imwrite('./exercicio_d/hw1_atrium_grayscale_log_transf_r1.hdr', log_img_r1)
 
-    cv2.imwrite('../ImagensHDR/hw1_memorial_grayscale_log_transf_b2.hdr', log_img_b2)
-    cv2.imwrite('../ImagensHDR/hw1_memorial_grayscale_log_transf_g2.hdr', log_img_g2)
-    cv2.imwrite('../ImagensHDR/hw1_memorial_grayscale_log_transf_r2.hdr', log_img_r2)
+    cv2.imwrite('./exercicio_d/hw1_memorial_grayscale_log_transf_b2.hdr', log_img_b2)
+    cv2.imwrite('./exercicio_d/hw1_memorial_grayscale_log_transf_g2.hdr', log_img_g2)
+    cv2.imwrite('./exercicio_d/hw1_memorial_grayscale_log_transf_r2.hdr', log_img_r2)

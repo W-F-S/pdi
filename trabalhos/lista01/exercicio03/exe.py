@@ -4,10 +4,10 @@ import numpy as np
 #img[i-3:i+4, j-3:j+4]  pegar a regiao 7x7
 
 def filtro_media(img):
-	# pegando proporcoes da imagem
-	m, n = img.shape
+	m = img.shape[0]
+	n = img.shape[1]
 
-	# criando mascara
+
 	mascara = np.ones([3, 3], dtype = int)
 	mascara = mascara / 9
 
@@ -36,7 +36,7 @@ def filtro_media_7x7(img):
             bloco = img[i-3:i+4, j-3:j+4]
             img_new[i, j] = np.sum(bloco * mascara)
 
-    # Converte para uint8
+
     img_new = np.clip(img_new, 0, 255).astype(np.uint8)
     return img_new
 
@@ -85,7 +85,6 @@ def filtro_min_7x7(img):
 
 
 def filtro_mediana(img):
-	# pegando proporcoes da imagem
 	m, n = img.shape
 
 	img_new = np.zeros([m, n], dtype = int)
@@ -167,9 +166,10 @@ def filtro_max_7x7(img):
 
     return img_new
 
-img = cv2.imread('img.png')
 
 
+
+img = cv2.imread('img.png',cv2.IMREAD_GRAYSCALE)
 
 out_media_3x3 = filtro_media(img)
 out_media_7x7 = filtro_media_7x7(img)

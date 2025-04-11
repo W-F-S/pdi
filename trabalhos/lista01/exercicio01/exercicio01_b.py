@@ -20,5 +20,5 @@ gray_image2 = cv2.cvtColor(img2, cv2.COLOR_BGR2GRAY)
 
 #cv2.destroyAllWindows()
 
-cv2.imwrite('../ImagensHDR/hw1_atrium_grayscale.hdr', gray_image)
-cv2.imwrite('../ImagensHDR/hw1_memorial_grayscale.hdr', gray_image2)
+cv2.imwrite('./exercicio_b/hw1_atrium_grayscale_exercicio_b.hdr', gray_image)
+cv2.imwrite('./exercicio_b/hw1_memorial_grayscale_exercicio_b.hdr', gray_image2)

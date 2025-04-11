@@ -23,5 +23,5 @@ if __name__ == '__main__':
     log_img = transf_log(img)
     log_img2 = transf_log(img2)
 
-    cv2.imwrite('../ImagensHDR/hw1_atrium_grayscale_log_transf.hdr', log_img)
-    cv2.imwrite('../ImagensHDR/hw1_memorial_grayscale_log_transf.hdr', log_img2)
+    cv2.imwrite('./exercicio_c/hw1_atrium_grayscale_log_transf_exercicio_c.hdr', log_img)
+    cv2.imwrite('./exercicio_c/hw1_memorial_grayscale_log_transf_exercicio_c.hdr', log_img2)
