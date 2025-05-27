@@ -1,1 +1,0 @@
-ver se é OK usar as bibliotecas do OpenCV

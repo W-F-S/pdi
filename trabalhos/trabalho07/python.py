@@ -100,11 +100,17 @@ if __name__ == "__main__":
     input_image_raw = cv2.imread(image_path)
     input_image_gray = cv2.cvtColor(input_image_raw, cv2.COLOR_BGR2GRAY)
 
-    size =3
+    size = 5
     se_square = np.ones((size, size), dtype=np.uint8)
 
     imagem_erosao = erosao(input_image_gray, se_square)
     imagem_dilatacao = dilatacao(input_image_gray, se_square)
 
-    cv2.imwrite(f'imagem_erosao_{se_square.shape[0]}x{se_square.shape[1]}.png', imagem_erosao)
-    cv2.imwrite(f'imagem_dilatacao_{se_square.shape[0]}x{se_square.shape[1]}.png', imagem_dilatacao)
+
+    imagem_fechamento = dilatacao(imagem_erosao, se_square)
+    imagem_abertura = erosao(imagem_dilatacao, se_square)
+
+
+
+    cv2.imwrite(f'imagem_fechamento{se_square.shape[0]}x{se_square.shape[1]}.png', imagem_fechamento)
+    cv2.imwrite(f'imagem_abertura_{se_square.shape[0]}x{se_square.shape[1]}.png', imagem_abertura)
